@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luna Red | Exclusive Access</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #ff4d4d;
+        --bg: #0a0a0a;
+        --card: #161616;
+        --text: #ffffff;
+      }
+      body {
+        background: var(--bg);
+        color: var(--text);
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Hero Section */
+      header {
+        padding: 60px 20px;
+      }
+      .profile-img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: 3px solid var(--primary);
+        object-fit: cover;
+        box-shadow: 0 0 25px rgba(255, 77, 77, 0.5);
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 2.8rem;
+        margin: 10px 0;
+        letter-spacing: -1px;
+      }
+      .subtitle {
+        color: #bbb;
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+        line-height: 1.5;
+      }
+
+      /* Teaser Gallery */
+      .gallery-title {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: var(--primary);
+        margin-bottom: 20px;
+      }
+      .gallery {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        margin-bottom: 50px;
+      }
+      .gallery img {
+        width: 100%;
+        height: 350px;
+        border-radius: 12px;
+        object-fit: cover;
+        filter: brightness(0.8);
+        transition: 0.4s;
+      }
+      .gallery img:hover {
+        filter: brightness(1.1);
+        transform: translateY(-5px);
+      }
+
+      /* Pricing Cards */
+      .pricing {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+      }
+      .card {
+        background: var(--card);
+        border-radius: 24px;
+        padding: 35px;
+        width: 320px;
+        border: 1px solid #333;
+        position: relative;
+        transition: 0.3s;
+      }
+      .card.featured {
+        border: 2px solid var(--primary);
+        box-shadow: 0 10px 30px rgba(255, 77, 77, 0.15);
+      }
+      .card h3 {
+        font-size: 1.6rem;
+        margin-bottom: 5px;
+      }
+      .price {
+        font-size: 3.2rem;
+        font-weight: 700;
+        margin: 15px 0;
+        color: #fff;
+      }
+      .price span {
+        font-size: 1rem;
+        color: #888;
+      }
+      .list {
+        text-align: left;
+        padding: 0;
+        list-style: none;
+        margin-bottom: 35px;
+        min-height: 120px;
+      }
+      .list li {
+        margin-bottom: 12px;
+        font-size: 0.95rem;
+        color: #ccc;
+        display: flex;
+        align-items: center;
+      }
+      .list li::before {
+        content: '✓';
+        color: var(--primary);
+        font-weight: bold;
+        margin-right: 10px;
+      }
+
+      /* PayPal Button */
+      .buy-btn {
+        display: block;
+        background: var(--primary);
+        color: white;
+        text-decoration: none;
+        padding: 18px;
+        border-radius: 50px;
+        font-weight: 700;
+        font-size: 1.1rem;
+        transition: 0.3s;
+      }
+      .buy-btn:hover {
+        background: #ff1a1a;
+        transform: scale(1.05);
+        box-shadow: 0 0 20px rgba(255, 77, 77, 0.4);
+      }
+
+      footer {
+        padding: 60px 20px;
+        font-size: 0.8rem;
+        color: #444;
+        border-top: 1px solid #1a1a1a;
+        margin-top: 50px;
+      }
+
+      /* Mobile Adjustments */
+      @media (max-width: 768px) {
+        .gallery {
+          grid-template-columns: 1fr;
+        }
+        .card {
+          width: 100%;
+        }
+        h1 {
+          font-size: 2.2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <img
+          src="https://i.ibb.co/7NtTD05h/face.jpg"
+          alt="Luna Red Face"
+          class="profile-img"
+        />
+        <h1>Luna <span style="color: var(--primary)">Red</span></h1>
+        <p class="subtitle">
+          19y | Fitness & Lifestyle | Miami 📍<br />The pear-shaped obsession
+          you've been looking for.
+        </p>
+      </header>
+
+      <p class="gallery-title">A Glimpse of my world</p>
+      <div class="gallery">
+        <img
+          src="https://i.ibb.co/gZfs43KQ/praia.jpg"
+          alt="Luna at the beach"
+        />
+        <img
+          src="https://i.ibb.co/hRVRZHvJ/quarto2.jpg"
+          alt="Luna in her bedroom"
+        />
+        <img
+          src="https://i.ibb.co/JRdZB5qC/sacada2.jpg"
+          alt="Luna on the balcony"
+        />
+      </div>
+
+      <section class="pricing">
+        <div class="card">
+          <h3>Daily Life Pack</h3>
+          <div class="price">$15<span> USD</span></div>
+          <ul class="list">
+            <li>10 Exclusive Sexy Photos</li>
+            <li>2 Exclusive hot videos</li>
+            <li>Full High-Resolution Access</li>
+            <li>Digital delivery via e-mail</li>
+          </ul>
+          <a href="SEU_LINK_PAYPAL_15" class="buy-btn">GET ACCESS</a>
+        </div>
+
+        <div class="card featured">
+          <div
+            style="
+              background: var(--primary);
+              position: absolute;
+              top: 12px;
+              right: -35px;
+              transform: rotate(45deg);
+              width: 130px;
+              font-size: 0.75rem;
+              font-weight: 700;
+              padding: 3px 0;
+            "
+          >
+            BEST VALUE
+          </div>
+          <h3>VIP Full Access</h3>
+          <div class="price">$35<span> USD</span></div>
+          <ul class="list">
+            <li>30+ Professional AI Photos</li>
+            <li>The "Mewtwo" Build Collection</li>
+            <li>3 Exclusive Video Clips (4K)</li>
+            <li>Secret Telegram Group Invite</li>
+          </ul>
+          <a href="SEU_LINK_PAYPAL_35" class="buy-btn">GET VIP ACCESS</a>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          © 2026 Luna Red Digital Collections. 18+ Only.<br />Payments processed
+          securely via PayPal. Content is digitally generated.
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
